@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*-- Styling vast--*/
+.logo {
+  position: absolute;
+  width: 25vw;
+  padding-left: 5vw;
+  margin-top:2vh;
+}
+
+.RightBtns {
+  position: absolute;
+  width: 13vw;
+  right: 0;
+  margin-top:4vh;
+  margin-right:5vw;
+}
+
+.language{
+  position: absolute;
+  width: 6vw;
+  bottom: 0;
+  margin-left:5vw;
+}
+
+.label {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #0039A6;
+  padding: 25px 25px 20px 25px;
+  background-color: white;
+  right:0;
+  bottom: 0;
+  margin-right:5vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif !important;
+  color: white;
+  margin-left:5vw;
+  padding-top: 25px;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  color: #0039A6;
+  padding-bottom: 20px;
+  margin-top:-30px;
+}
+
+.prijs {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/*-- Styling vast--*/
+/*-- Styling Section 1 --*/
+section {
+min-width: 100vw;
+height: 100vh;
+scroll-snap-align: start;
+
+}
+
+section:first-child{
+  background-color: #D42B1E;
+  height: 100vh;
+  width: 100vw;
+}
+
+.textHeaderOne{
+position: relative;
+width: 30vw;
+margin-top: 40vh;
+margin-left: 15vw;
+}
+
+
+
+.paulManafort {
+  width: 67vw;
+  margin-left: 13vw;
+  margin-top: -40vh;
+
+}
+.textHeaderTwo{
+position: relative;
+width: 35vw;
+z-index: 0;
+margin-left: 13vw;
+}
+
+/*-- Styling Section 1 --*/
+/*-- Styling Sections --*/
+
+section:nth-of-type(2){
+  height: 100vh;
+  width: 100vw;
+}
+
+.roodVlak {
+  background-color: #D42B1E;
+  width: 100vw;
+  height: 30vh;
+  margin-top:20vh;
+  z-index: 0;
+}
+
+.product {
+  width: 90vw;
+  height: 60vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-20vh;
+  background-color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 35% 50%;
+
+}
+
+
+.vlak{
+  width: 30vw;
+  height: 50vh;
+  background-color: #F0F0F0;
+
+}
+
+.vlak img{
+  width: 17vw;
+  margin-left: 80px;
+  animation: swing ease-in-out 2s infinite alternate;
+}
+
+@keyframes swing {
+    0% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg);
+     }
+}
+
+.informatie{
+  margin-left: 20px;
+}
+
+
+.informatie p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hartje {
+  width: 2vw;
+  margin-left: 120%;
+}
+
+button{
+  padding: 20px 30px;
+  background-color:  #0039A6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top:25px;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #002B7E;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: #002B7E;
+}
+
+/*-- Styling Sections --*/
+/*--Animations --*/
+.banner {
+  position: absolute;
+  bottom: 0;
+  margin-left: 22vw;
+  margin-bottom: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;/* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+.modal-content img{
+  width: 7vw;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+.modal-content p:nth-of-type(1){
+  color:  #D42B1E;
+  font-size: 22px;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.putinGif {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+}
+
+.trumpGif {
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+}
+/*--Animations --*/
+
+.slider {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vw);
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+}
